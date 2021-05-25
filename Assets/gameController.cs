@@ -113,7 +113,7 @@ public class gameController : MonoBehaviour
           {
               for (int c = 0; c < col; c++)
               {
-                if(area1 =! 0 && area2 =!0)
+                if(area1 < 1 && area2 < 1)
                 {
                   if(area1 > area2) if(fillArea[r,c] == 0) fillArea[r,c] = 3;
                   else if(fillArea[r,c] == 1) fillArea[r,c] = 3;
@@ -121,7 +121,7 @@ public class gameController : MonoBehaviour
 
               }
           }
-        }
+
 
         for (int r = 0; r < row; r++)
         {
@@ -133,7 +133,7 @@ public class gameController : MonoBehaviour
                   }
             }
         }
-    
+
 
     }
 
